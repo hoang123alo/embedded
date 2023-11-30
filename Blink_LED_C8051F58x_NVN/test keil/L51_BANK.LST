@@ -1,9 +1,9 @@
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     1
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.02b
 OBJECT MODULE PLACED IN L51_BANK.OBJ
-ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE L51_BANK.A51 XR GEN DB EP NOMOD51 INCDIR(c:\SiLabs\MCU\Inc) 
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE L51_BANK.A51 XR GEN DB EP NOMOD51 INCDIR(C:\SiLabs\MCU\Inc) 
 
 LOC  OBJ            LINE     SOURCE
 
@@ -65,7 +65,7 @@ LOC  OBJ            LINE     SOURCE
                       56     ;        code banking and variable banking share the same hardware I/O pins.
                       57     ;        The C51 Compiler must be used with the VARBANKING directive.
                       58     ;        Variable Banking is only supported with the LX51 linker/locater.
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     2
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     2
 
                       59     ;
                       60     ; <o> ?B_RST_BANK: Active code bank number after a Reset <0x0-0xFF>
@@ -133,7 +133,7 @@ LOC  OBJ            LINE     SOURCE
                      224     ;             the ?B_BANKn routine:  A, B, R0, DPTR, PSW                      *
                      225     ;                                                                             *
                      226     ; ?B_SWITCHn  is a function which selects the bank 'n'.  This function is     *
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     3
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     3
 
                      227     ;             used at the end of a user function to return to the calling     *
                      228     ;             code bank.  Only the following registers may be altered in the  *
@@ -201,7 +201,7 @@ LOC  OBJ            LINE     SOURCE
                      379     
                      380     
                      381     IF ?B_RTX = 0 AND ?B_NBANKS <= 32
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     4
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     4
 
                      382       ; Convert Bank No in Accu to Address * 8
                      383     
@@ -269,7 +269,7 @@ LOC  OBJ            LINE     SOURCE
                      476                     SELECT  %CNT
                      477     CNT             SET     CNT+1
                      478     
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     5
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     5
 
                      479                     ENDM
                      480+1                   SELECT  %CNT
@@ -337,7 +337,7 @@ LOC  OBJ            LINE     SOURCE
   0004               542+1   CNT             SET     CNT+1
                      543+1   
                      544     
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     6
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     6
 
                      545     
                      546     
@@ -405,7 +405,7 @@ LOC  OBJ            LINE     SOURCE
                      608+1   
   0004               609+1   CNT             SET     CNT+1
                      610     
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     7
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     7
 
                      611     
                                ENDIF
@@ -453,7 +453,7 @@ LOC  OBJ            LINE     SOURCE
                     1038     
                              ENDIF  ; close block IF ?B_VAR_BANKING ****************************************
                     1451     
-A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 13:29:31 PAGE     8
+A51 MACRO ASSEMBLER  L51_BANK                                                             11/30/2023 16:33:33 PAGE     8
 
 XREF SYMBOL TABLE LISTING
 ---- ------ ----- -------

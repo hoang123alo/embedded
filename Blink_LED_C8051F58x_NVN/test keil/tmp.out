@@ -1,13 +1,5 @@
 
-BL51 BANKED LINKER/LOCATER V6.22 - SN: K1FSC-A07X7Z
-COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
-"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\STARTUP.obj",
-"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\main.obj",
-"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\F50x_Target_App_InfoBlock.obj",
-"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\L51_BANK.obj",
-"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\mgr_mcu.obj",
-"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\drv_mcu.obj",
-"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\drv_timer.obj"  TO "D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\blinked" NOOL CODE(0x4000-0x7FFF) BANK0(?CO?F50x_Target_App_InfoBlock(0x7FF0))  BANKAREA(8000H,0FFFFH) 
+C51 COMPILER V9.51 - SN: K1FSC-A07X7Z
+COPYRIGHT Copyright (C) 2012 ARM Ltd and ARM Germany GmbH. All rights reserved.
 
-Program Size: data=16.0 xdata=40 code=1338
-LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

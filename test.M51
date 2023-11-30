@@ -1,0 +1,194 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/30/2023  16:36:00  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\main.obj, D:\Embedded\Blink_LED_C8051F58x_NVN\tes
+>> t keil\L51_BANK.obj, D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\STARTUP.obj, D:\Embedded\Blink_LED_C8051F58x_NVN\t
+>> est keil\F50x_Target_App_InfoBlock.obj TO D:\Embedded\test NOOL CODE (0X4000-0X7FFF) BANK0 (?CO?F50X_TARGET_APP_INFOB
+>> LOCK (0X7FF0)) BANKAREA (8000H, 0FFFFH)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\main.obj (MAIN)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\L51_BANK.obj (?BANK?SWITCHING)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\STARTUP.obj (?C_STARTUP)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\F50x_Target_App_InfoBlock.obj (F50X_TARGET_APP_INFOBLOCK)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LLDIIDATA)
+
+
+LINK MAP OF MODULE:  D:\Embedded\test (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0004H     UNIT         ?DT?_DELAY?MAIN
+            IDATA   000CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+                    0000H     4000H                  *** GAP ***
+            CODE    4000H     0003H     ABSOLUTE     
+            CODE    4003H     0050H     INBLOCK      ?BANK?SELECT
+            CODE    4053H     0021H     UNIT         ?PR?MAIN?MAIN
+            CODE    4074H     0020H     UNIT         ?C?LIB_CODE
+            CODE    4094H     0016H     UNIT         ?PR?_DELAY?MAIN
+            CODE    40AAH     000FH     UNIT         ?C_C51STARTUP
+            CODE    40B9H     000AH     UNIT         ?PR?PORT_IO_INIT?MAIN
+            CODE    40C3H     0003H     UNIT         ?PR?INIT_DEVICE?MAIN
+                    40C6H     003AH                  *** GAP ***
+            CODE    4100H     001CH     PAGE         ?BANK?SWITCH
+
+            * * * * * * *   C O D E   B A N K   0   * * * * * * *
+                    0000H     7FF0H                  *** GAP ***
+            BANK0   7FF0H     0004H     UNIT         ?CO?F50X_TARGET_APP_INFOBLOCK
+
+
+
+SYMBOL TABLE OF MODULE:  D:\Embedded\test (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00A7H         PUBLIC        SFRPAGE
+  D:00A6H         PUBLIC        P2MDOUT
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  16:36:00  PAGE 2
+
+
+  C:4094H         PUBLIC        _delay
+  C:40B9H         PUBLIC        Port_IO_Init
+  C:4053H         PUBLIC        main
+  C:40C3H         PUBLIC        Init_Device
+  -------         PROC          PORT_IO_INIT
+  C:40B9H         LINE#         4
+  C:40B9H         LINE#         5
+  C:40BCH         LINE#         6
+  C:40BFH         LINE#         8
+  C:40C2H         LINE#         9
+  -------         ENDPROC       PORT_IO_INIT
+  -------         PROC          INIT_DEVICE
+  C:40C3H         LINE#         10
+  C:40C3H         LINE#         11
+  C:40C3H         LINE#         12
+  -------         ENDPROC       INIT_DEVICE
+  -------         PROC          _DELAY
+  D:0008H         SYMBOL        count
+  C:4094H         LINE#         14
+  C:409CH         LINE#         15
+  C:40A9H         LINE#         16
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0002H         SYMBOL        i
+  -------         ENDDO         
+  C:4053H         LINE#         18
+  C:4053H         LINE#         20
+  C:4056H         LINE#         22
+  C:4056H         LINE#         23
+  C:4059H         LINE#         24
+  C:405CH         LINE#         25
+  C:4067H         LINE#         26
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?BANK?SWITCHING
+  C:4003H         SEGMENT       ?BANK?SELECT
+  C:4100H         SEGMENT       ?BANK?SWITCH
+  C:4003H         PUBLIC        ?B_BANK0
+  C:4015H         PUBLIC        ?B_BANK1
+  C:4027H         PUBLIC        ?B_BANK2
+  C:4039H         PUBLIC        ?B_BANK3
+  D:0090H         PUBLIC        ?B_CURRENTBANK
+  N:0004H         PUBLIC        ?B_FACTOR
+  N:000CH         PUBLIC        ?B_MASK
+  N:0000H         PUBLIC        ?B_MODE
+  N:0004H         PUBLIC        ?B_NBANKS
+  N:00FFH         PUBLIC        ?B_RST_BANK
+  C:4100H         PUBLIC        ?B_SWITCH0
+  C:4108H         PUBLIC        ?B_SWITCH1
+  C:4110H         PUBLIC        ?B_SWITCH2
+  C:4118H         PUBLIC        ?B_SWITCH3
+  C:404CH         PUBLIC        ?B_SWITCHBANK_A
+  C:404BH         PUBLIC        _SWITCHBANK
+  N:0000H         SYMBOL        ?BANK?SWITCHING
+  N:0002H         SYMBOL        ?B_FIRSTBIT
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  16:36:00  PAGE 3
+
+
+  D:0090H         SYMBOL        ?B_PORT
+  N:0000H         SYMBOL        ?B_RTX
+  N:0000H         SYMBOL        ?B_VAR_BANKING
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  N:0000H         SYMBOL        BANK0
+  N:0004H         SYMBOL        BANK1
+  N:0008H         SYMBOL        BANK2
+  N:000CH         SYMBOL        BANK3
+  N:0004H         SYMBOL        CNT
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  B:00A8H.7       SYMBOL        EA
+  D:00A8H         SYMBOL        IE
+  N:0003H         SYMBOL        MASK
+  D:0090H         SYMBOL        P1
+  -------         ENDMOD        ?BANK?SWITCHING
+
+  -------         MODULE        ?C_STARTUP
+  C:40AAH         SEGMENT       ?C_C51STARTUP
+  I:000CH         SEGMENT       ?STACK
+  C:4000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:40B0H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  D:00D9H         SYMBOL        PCA0MD
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:40AAH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:4000H         LINE#         127
+  C:40AAH         LINE#         133
+  C:40ADH         LINE#         136
+  C:40AFH         LINE#         137
+  C:40B0H         LINE#         138
+  C:40B1H         LINE#         139
+  C:40B3H         LINE#         188
+  C:40B6H         LINE#         199
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        F50X_TARGET_APP_INFOBLOCK
+  C:0000H         SYMBOL        _ICE_DUMMY_
+ C0:7FF0H         PUBLIC        INFOBLOCK
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  16:36:00  PAGE 4
+
+
+  -------         ENDMOD        F50X_TARGET_APP_INFOBLOCK
+
+  -------         MODULE        ?C?LLDIIDATA
+  C:407DH         PUBLIC        ?C?LLDIIDATA
+  C:4074H         PUBLIC        ?C?LLDIIDATA1
+  C:4076H         PUBLIC        ?C?LLDIIDATA8
+  -------         ENDMOD        ?C?LLDIIDATA
+
+Program Size: data=13.0 xdata=0 code=230
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

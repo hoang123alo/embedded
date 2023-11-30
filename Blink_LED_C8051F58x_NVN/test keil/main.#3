@@ -1,72 +1,30 @@
 #include "compiler_defs.h"
 #include "C8051F580_defs.h"
-#include "Global_Define.h"
-#include "mgr_mcu.h"
-#include "drv_mcu.h"
-#include "drv_timer.h"
 
-INTERRUPT_PROTO (TIMER2_ISR, INTERRUPT_TIMER2);
-
-extern SEG_XDATA tMsg_Global_Tick 	g_Global_Tick_Msg;
-extern SEG_XDATA tMsg_Time_s		ga_tCAN_Time_Msg[TID_COUNT];
-
-int main() {
-	SEG_XDATA U8 On_Time = 0x00U;
-	Init_McuTask();
-	Delay_Time_Set(TID_BLINK_TIMER, DT_BLINK_TIMER);
-	
-	while(1) {
-		On_Time = Delay_Time_Get(TID_BLINK_TIMER);
-		if(On_Time == TRUE) {
-			if(LED_STATUS_UPDOWNLOAD == 0x00U) {
-				LED_STATUS_UPDOWNLOAD = 0x01U;
-			}
-			else {
-				LED_STATUS_UPDOWNLOAD = 0x00U;
-			}
-		}
-	}
-
-	return 0;
+void Port_IO_Init(){
+SFRPAGE   = CONFIG_PAGE;
+    P2MDOUT   = 0x03;
+    //XBR2      = 0x40;
+    SFRPAGE   = ACTIVE_PAGE;
+}
+void Init_Device(void)
+{
+    Port_IO_Init();
+}
+void delay(long count) {
+    while (count--);
 }
 
-INTERRUPT(TIMER2_ISR, INTERRUPT_TIMER2)
-{
-	SEG_XDATA U8 i = 0x00U;
-	TF2H = 0x00U;
+int main(){
+	Init_Device();
 
-	g_Global_Tick_Msg.Tick_1ms++;
-
-	if ( g_Global_Tick_Msg.Over_Set == FALSE)
-	{
-		if ( g_Global_Tick_Msg.Tick_1ms >= 0xFFFFU )
-		{
-			if ( g_Global_Tick_Msg.Tick_1ms >= g_Global_Tick_Msg.Limit )
-			{
-				g_Global_Tick_Msg.Tick_1ms = (U32)0;
-				for ( i = (U8)0; i <= TID_COUNT; i++)
-				{
-					ga_tCAN_Time_Msg[i].End_Time = (U32)0;
-				}				
-			}
-			else
-			{
-				g_Global_Tick_Msg.Over_Set = TRUE;
-				g_Global_Tick_Msg.Limit = (volatile U32)(g_Global_Tick_Msg.Limit - 0xFFFFU);
-			}
+    while (1) {
+        P2 = ~P2;
+		int i;
+		for(i = 0 ; i< 10 ; i++){
+        delay(5000);
 		}
-	}
-	else
-	{
-		g_Global_Tick_Msg.Limit--;
-		if ( g_Global_Tick_Msg.Limit <= (U8)0 )
-		{
-			g_Global_Tick_Msg.Tick_1ms = (U16)0;
-			g_Global_Tick_Msg.Over_Set = FALSE;
-			for ( i = 0; i <= TID_COUNT; i++)
-			{
-				ga_tCAN_Time_Msg[i].End_Time -= ga_tCAN_Time_Msg[i].Cur_Time;
-			}
-		}
-	}
+		
+    }
+ return 0;
 }

@@ -1,9 +1,9 @@
-A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 13:29:31 PAGE     1
+A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 16:33:33 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.02b
 OBJECT MODULE PLACED IN STARTUP.OBJ
-ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE STARTUP.A51 XR GEN DB EP NOMOD51 INCDIR(c:\SiLabs\MCU\Inc) 
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE STARTUP.A51 XR GEN DB EP NOMOD51 INCDIR(C:\SiLabs\MCU\Inc) 
 
 LOC  OBJ            LINE     SOURCE
 
@@ -65,7 +65,7 @@ LOC  OBJ            LINE     SOURCE
                       56     ; <h> Stack Space for reentrant functions in the SMALL model.
                       57     ;  <q> IBPSTACK: Enable SMALL model reentrant stack
                       58     ;     <i> Stack space for reentrant functions in the SMALL model.
-A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 13:29:31 PAGE     2
+A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 16:33:33 PAGE     2
 
   0000                59     IBPSTACK        EQU     0       ; set to 1 if small reentrant is used.
                       60     ;  <o> IBPSTACKTOP: End address of SMALL model stack <0x0-0xFF>
@@ -133,7 +133,7 @@ LOC  OBJ            LINE     SOURCE
                      122     
                      123                     EXTRN CODE (?C_START)
                      124                     PUBLIC  ?C_STARTUP
-A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 13:29:31 PAGE     3
+A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 16:33:33 PAGE     3
 
                      125     
 ----                 126                     CSEG    AT      4000h  ; *** MODIFIED RESET VECTOR - TARGET APP FW ***
@@ -201,7 +201,7 @@ LOC  OBJ            LINE     SOURCE
 0009 758100   F      188                     MOV     SP,#?STACK-1
                      189     
                      190     ; This code is required if you use L51_BANK.A51 with Banking Mode 4
-A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 13:29:31 PAGE     4
+A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 16:33:33 PAGE     4
 
                      191     ;<h> Code Banking
                      192     ; <q> Select Bank 0 for L51_BANK.A51 Mode 4
@@ -214,7 +214,7 @@ LOC  OBJ            LINE     SOURCE
 000C 020000   F      199                     LJMP    ?C_START
                      200     
                      201                     END
-A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 13:29:31 PAGE     5
+A51 MACRO ASSEMBLER  STARTUP                                                              11/30/2023 16:33:33 PAGE     5
 
 XREF SYMBOL TABLE LISTING
 ---- ------ ----- -------
