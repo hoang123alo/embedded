@@ -1,0 +1,7 @@
+"STARTUP.obj",
+"main.obj",
+".\Delay.obj",
+".\Uart.obj" 
+TO "UART" 
+
+ru 

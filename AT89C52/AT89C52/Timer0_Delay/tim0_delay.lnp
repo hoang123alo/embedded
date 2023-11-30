@@ -1,0 +1,5 @@
+"STARTUP.obj",
+"main.obj",
+".\Delay.obj" 
+TO "tim0_delay" 
+RAMSIZE(256) 

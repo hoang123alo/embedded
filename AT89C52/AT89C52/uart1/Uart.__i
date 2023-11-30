@@ -1,0 +1,1 @@
+"..\Lib\Uart.c" OMF2 BROWSE INCDIR(..\uart) DEBUG PRINT(.\Uart.lst) OBJECT(.\Uart.obj)

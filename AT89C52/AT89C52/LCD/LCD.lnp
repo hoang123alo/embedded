@@ -1,0 +1,4 @@
+"main.obj",
+".\Delay.obj" 
+TO "LCD" 
+RAMSIZE(256) 

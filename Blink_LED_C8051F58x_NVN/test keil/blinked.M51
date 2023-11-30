@@ -1,0 +1,445 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/30/2023  13:29:31  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\STARTUP.obj, D:\Embedded\Blink_LED_C8051F58x_NVN\
+>> test keil\main.obj, D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\F50x_Target_App_InfoBlock.obj, D:\Embedded\Blink_LE
+>> D_C8051F58x_NVN\test keil\L51_BANK.obj, D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\mgr_mcu.obj, D:\Embedded\Blink_
+>> LED_C8051F58x_NVN\test keil\drv_mcu.obj, D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\drv_timer.obj TO D:\Embedded\B
+>> link_LED_C8051F58x_NVN\test keil\blinked NOOL CODE (0X4000-0X7FFF) BANK0 (?CO?F50X_TARGET_APP_INFOBLOCK (0X7FF0)) BAN
+>> KAREA (8000H, 0FFFFH)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\STARTUP.obj (?C_STARTUP)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\main.obj (MAIN)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\F50x_Target_App_InfoBlock.obj (F50X_TARGET_APP_INFOBLOCK)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\L51_BANK.obj (?BANK?SWITCHING)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\mgr_mcu.obj (MGR_MCU)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\drv_mcu.obj (DRV_MCU)
+  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\drv_timer.obj (DRV_TIMER)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?ULCMP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LSTXDATA)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LSTKXDATA)
+
+
+LINK MAP OF MODULE:  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\blinked (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0004H     UNIT         ?DT?_DELAY_TIME_GET?DRV_TIMER
+            DATA    000CH     0003H     UNIT         ?DT?_DELAY_TIME_SET?DRV_TIMER
+            IDATA   000FH     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     0023H     UNIT         ?XD?DRV_TIMER
+            XDATA   0023H     0001H     UNIT         ?XD?MAIN?MAIN
+            XDATA   0024H     0001H     UNIT         ?XD?TIMER2_ISR?MAIN
+            XDATA   0025H     0001H     UNIT         ?XD?INIT_MCUTASK?MGR_MCU
+            XDATA   0026H     0001H     UNIT         ?XD?TIMER2_INIT?DRV_TIMER
+            XDATA   0027H     0001H     UNIT         ?XD?_DELAY_TIME_SET?DRV_TIMER
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+                    0000H     4000H                  *** GAP ***
+            CODE    4000H     0003H     ABSOLUTE     
+            CODE    4003H     0026H     UNIT         ?PR?INIT_MCUTASK?MGR_MCU
+                    4029H     0002H                  *** GAP ***
+            CODE    402BH     0003H     ABSOLUTE     
+            CODE    402EH     01B0H     UNIT         ?PR?TIMER2_ISR?MAIN
+            CODE    41DEH     00FBH     UNIT         ?PR?_DELAY_TIME_SET?DRV_TIMER
+            CODE    42D9H     009AH     UNIT         ?PR?_DELAY_TIME_GET?DRV_TIMER
+            CODE    4373H     0071H     UNIT         ?PR?GLOBAL_TIMER_INIT?DRV_TIMER
+            CODE    43E4H     0050H     INBLOCK      ?BANK?SELECT
+            CODE    4434H     004EH     UNIT         ?C?LIB_CODE
+            CODE    4482H     0039H     UNIT         ?PR?MAIN?MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  13:29:31  PAGE 2
+
+
+            CODE    44BBH     0022H     UNIT         ?PR?TIMER2_INIT?DRV_TIMER
+            CODE    44DDH     001AH     UNIT         ?PR?PORT_INIT?DRV_MCU
+                    44F7H     0009H                  *** GAP ***
+            CODE    4500H     001CH     PAGE         ?BANK?SWITCH
+            CODE    451CH     000FH     UNIT         ?C_C51STARTUP
+            CODE    452BH     000CH     UNIT         ?PR?EXINTERRUPT_INIT?DRV_MCU
+            CODE    4537H     000AH     UNIT         ?PR?OSC_INIT?DRV_MCU
+
+            * * * * * * *   C O D E   B A N K   0   * * * * * * *
+                    0000H     7FF0H                  *** GAP ***
+            BANK0   7FF0H     0004H     UNIT         ?CO?F50X_TARGET_APP_INFOBLOCK
+
+
+
+SYMBOL TABLE OF MODULE:  D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\blinked (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:451CH         SEGMENT       ?C_C51STARTUP
+  I:000FH         SEGMENT       ?STACK
+  C:4000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:4522H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  D:00D9H         SYMBOL        PCA0MD
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:451CH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:4000H         LINE#         127
+  C:451CH         LINE#         133
+  C:451FH         LINE#         136
+  C:4521H         LINE#         137
+  C:4522H         LINE#         138
+  C:4523H         LINE#         139
+  C:4525H         LINE#         188
+  C:4528H         LINE#         199
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  13:29:31  PAGE 3
+
+
+  B:00A0H.1       PUBLIC        LED_STATUS_UPDOWNLOAD
+  C:402EH         PUBLIC        TIMER2_ISR
+  B:00A0H.0       PUBLIC        LED_STATUS_ERROR
+  B:00C8H.7       PUBLIC        TF2H
+  C:4482H         PUBLIC        main
+  B:0090H.2       PUBLIC        BUTTON
+  -------         PROC          MAIN
+  -------         DO            
+  X:0023H         SYMBOL        On_Time
+  -------         ENDDO         
+  C:4482H         LINE#         13
+  C:4482H         LINE#         14
+  C:4487H         LINE#         16
+  C:448AH         LINE#         18
+  C:4493H         LINE#         20
+  C:4495H         LINE#         21
+  C:4497H         LINE#         23
+  C:4497H         LINE#         24
+  C:44A1H         LINE#         25
+  C:44A4H         LINE#         26
+  C:44A7H         LINE#         27
+  C:44A9H         LINE#         28
+  C:44ABH         LINE#         29
+  C:44ABH         LINE#         30
+  C:44ADH         LINE#         31
+  C:44ADH         LINE#         32
+  C:44B0H         LINE#         33
+  C:44B3H         LINE#         34
+  C:44B5H         LINE#         35
+  C:44B7H         LINE#         36
+  C:44B7H         LINE#         37
+  C:44B9H         LINE#         38
+  C:44B9H         LINE#         40
+  C:44B9H         LINE#         41
+  C:44B9H         LINE#         42
+  -------         ENDPROC       MAIN
+  -------         PROC          TIMER2_ISR
+  -------         DO            
+  X:0024H         SYMBOL        i
+  -------         ENDDO         
+  C:402EH         LINE#         47
+  C:404BH         LINE#         49
+  C:4050H         LINE#         50
+  C:4052H         LINE#         52
+  C:4071H         LINE#         54
+  C:407AH         LINE#         55
+  C:407AH         LINE#         56
+  C:4097H         LINE#         57
+  C:4097H         LINE#         58
+  C:40B3H         LINE#         59
+  C:40B3H         LINE#         60
+  C:40BDH         LINE#         61
+  C:40CFH         LINE#         62
+  C:40CFH         LINE#         63
+  C:40E4H         LINE#         64
+  C:40ECH         LINE#         65
+  C:40ECH         LINE#         67
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  13:29:31  PAGE 4
+
+
+  C:40ECH         LINE#         68
+  C:40F2H         LINE#         69
+  C:4113H         LINE#         70
+  C:4113H         LINE#         71
+  C:4113H         LINE#         72
+  C:4116H         LINE#         74
+  C:4116H         LINE#         75
+  C:4138H         LINE#         76
+  C:4151H         LINE#         77
+  C:4151H         LINE#         78
+  C:415BH         LINE#         79
+  C:4160H         LINE#         80
+  C:416EH         LINE#         81
+  C:416EH         LINE#         82
+  C:41BBH         LINE#         83
+  C:41C3H         LINE#         84
+  C:41C3H         LINE#         85
+  C:41C3H         LINE#         86
+  -------         ENDPROC       TIMER2_ISR
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        F50X_TARGET_APP_INFOBLOCK
+  C:0000H         SYMBOL        _ICE_DUMMY_
+ C0:7FF0H         PUBLIC        INFOBLOCK
+  -------         ENDMOD        F50X_TARGET_APP_INFOBLOCK
+
+  -------         MODULE        ?BANK?SWITCHING
+  C:43E4H         SEGMENT       ?BANK?SELECT
+  C:4500H         SEGMENT       ?BANK?SWITCH
+  C:43E4H         PUBLIC        ?B_BANK0
+  C:43F6H         PUBLIC        ?B_BANK1
+  C:4408H         PUBLIC        ?B_BANK2
+  C:441AH         PUBLIC        ?B_BANK3
+  D:0090H         PUBLIC        ?B_CURRENTBANK
+  N:0004H         PUBLIC        ?B_FACTOR
+  N:000CH         PUBLIC        ?B_MASK
+  N:0000H         PUBLIC        ?B_MODE
+  N:0004H         PUBLIC        ?B_NBANKS
+  N:00FFH         PUBLIC        ?B_RST_BANK
+  C:4500H         PUBLIC        ?B_SWITCH0
+  C:4508H         PUBLIC        ?B_SWITCH1
+  C:4510H         PUBLIC        ?B_SWITCH2
+  C:4518H         PUBLIC        ?B_SWITCH3
+  C:442DH         PUBLIC        ?B_SWITCHBANK_A
+  C:442CH         PUBLIC        _SWITCHBANK
+  N:0000H         SYMBOL        ?BANK?SWITCHING
+  N:0002H         SYMBOL        ?B_FIRSTBIT
+  D:0090H         SYMBOL        ?B_PORT
+  N:0000H         SYMBOL        ?B_RTX
+  N:0000H         SYMBOL        ?B_VAR_BANKING
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  N:0000H         SYMBOL        BANK0
+  N:0004H         SYMBOL        BANK1
+  N:0008H         SYMBOL        BANK2
+  N:000CH         SYMBOL        BANK3
+  N:0004H         SYMBOL        CNT
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  13:29:31  PAGE 5
+
+
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  B:00A8H.7       SYMBOL        EA
+  D:00A8H         SYMBOL        IE
+  N:0003H         SYMBOL        MASK
+  D:0090H         SYMBOL        P1
+  -------         ENDMOD        ?BANK?SWITCHING
+
+  -------         MODULE        MGR_MCU
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A8H.7       PUBLIC        EA
+  D:00A7H         PUBLIC        SFRPAGE
+  D:00D9H         PUBLIC        PCA0MD
+  D:00FFH         PUBLIC        VDM0CN
+  C:4003H         PUBLIC        Init_McuTask
+  -------         PROC          INIT_MCUTASK
+  -------         DO            
+  X:0025H         SYMBOL        i
+  -------         ENDDO         
+  C:4003H         LINE#         7
+  C:4003H         LINE#         9
+  C:4006H         LINE#         11
+  C:4009H         LINE#         13
+  C:400CH         LINE#         15
+  C:401AH         LINE#         17
+  C:401DH         LINE#         18
+  C:4020H         LINE#         19
+  C:4023H         LINE#         20
+  C:4026H         LINE#         21
+  C:4028H         LINE#         22
+  -------         ENDPROC       INIT_MCUTASK
+  -------         ENDMOD        MGR_MCU
+
+  -------         MODULE        DRV_MCU
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A0H.1       PUBLIC        LED_STATUS_UPDOWNLOAD
+  B:00A0H.0       PUBLIC        LED_STATUS_ERROR
+  D:00A7H         PUBLIC        SFRPAGE
+  D:00A4H         PUBLIC        P0MDOUT
+  D:00A6H         PUBLIC        P2MDOUT
+  C:4537H         PUBLIC        Osc_Init
+  D:00E1H         PUBLIC        XBR0
+  C:44DDH         PUBLIC        Port_Init
+  D:00C7H         PUBLIC        XBR2
+  C:452BH         PUBLIC        Exinterrupt_Init
+  D:0088H         PUBLIC        TCON
+  D:00D4H         PUBLIC        P0SKIP
+  D:00A1H         PUBLIC        OSCICN
+  B:00A8H.2       PUBLIC        EX1
+  -------         PROC          OSC_INIT
+  C:4537H         LINE#         5
+  C:4537H         LINE#         6
+  C:4537H         LINE#         7
+  C:453AH         LINE#         8
+  C:453DH         LINE#         9
+  C:4540H         LINE#         10
+  -------         ENDPROC       OSC_INIT
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  13:29:31  PAGE 6
+
+
+  -------         PROC          PORT_INIT
+  C:44DDH         LINE#         12
+  C:44DDH         LINE#         13
+  C:44DDH         LINE#         14
+  C:44E0H         LINE#         15
+  C:44E3H         LINE#         16
+  C:44E6H         LINE#         17
+  C:44E9H         LINE#         18
+  C:44ECH         LINE#         19
+  C:44EFH         LINE#         20
+  C:44F2H         LINE#         21
+  C:44F4H         LINE#         22
+  C:44F6H         LINE#         23
+  -------         ENDPROC       PORT_INIT
+  -------         PROC          EXINTERRUPT_INIT
+  C:452BH         LINE#         25
+  C:452BH         LINE#         26
+  C:452BH         LINE#         27
+  C:452EH         LINE#         28
+  C:4531H         LINE#         30
+  C:4533H         LINE#         31
+  C:4536H         LINE#         32
+  -------         ENDPROC       EXINTERRUPT_INIT
+  -------         ENDMOD        DRV_MCU
+
+  -------         MODULE        DRV_TIMER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A7H         PUBLIC        SFRPAGE
+  X:0000H         PUBLIC        g_Global_Tick_Msg
+  D:00CCH         PUBLIC        TMR2
+  C:44BBH         PUBLIC        Timer2_Init
+  C:4373H         PUBLIC        Global_Timer_Init
+  D:00C8H         PUBLIC        TMR2CN
+  D:00CAH         PUBLIC        TMR2RL
+  B:00A8H.5       PUBLIC        ET2
+  B:00C8H.2       PUBLIC        TR2
+  C:42D9H         PUBLIC        _Delay_Time_Get
+  X:0009H         PUBLIC        ga_tCAN_Time_Msg
+  D:008EH         PUBLIC        CKCON
+  C:41DEH         PUBLIC        _Delay_Time_Set
+  -------         PROC          GLOBAL_TIMER_INIT
+  -------         DO            
+  D:0003H         SYMBOL        i
+  -------         ENDDO         
+  C:4373H         LINE#         9
+  C:4373H         LINE#         10
+  C:4373H         LINE#         11
+  C:4375H         LINE#         12
+  C:437FH         LINE#         13
+  C:4389H         LINE#         14
+  C:438EH         LINE#         16
+  C:438EH         LINE#         17
+  C:438EH         LINE#         18
+  C:439EH         LINE#         19
+  C:43B3H         LINE#         20
+  C:43C8H         LINE#         21
+  C:43DDH         LINE#         22
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  13:29:31  PAGE 7
+
+
+  C:43E1H         LINE#         31
+  -------         ENDPROC       GLOBAL_TIMER_INIT
+  -------         PROC          TIMER2_INIT
+  -------         DO            
+  X:0026H         SYMBOL        SFRPAGE_save
+  -------         ENDDO         
+  C:44BBH         LINE#         76
+  C:44BBH         LINE#         77
+  C:44BBH         LINE#         78
+  C:44C1H         LINE#         79
+  C:44C4H         LINE#         81
+  C:44C6H         LINE#         83
+  C:44C9H         LINE#         86
+  C:44CFH         LINE#         88
+  C:44D5H         LINE#         89
+  C:44D7H         LINE#         90
+  C:44D9H         LINE#         92
+  C:44DCH         LINE#         93
+  -------         ENDPROC       TIMER2_INIT
+  -------         PROC          _DELAY_TIME_SET
+  D:000CH         SYMBOL        ID
+  D:000DH         SYMBOL        Delay_Time
+  -------         DO            
+  X:0027H         SYMBOL        Set_Delay_Time
+  -------         ENDDO         
+  C:41DEH         LINE#         136
+  C:41E4H         LINE#         137
+  C:41E4H         LINE#         138
+  C:41E9H         LINE#         140
+  C:4209H         LINE#         141
+  C:4222H         LINE#         142
+  C:4234H         LINE#         144
+  C:4284H         LINE#         145
+  C:42B8H         LINE#         146
+  C:42B8H         LINE#         147
+  C:42D8H         LINE#         148
+  C:42D8H         LINE#         149
+  -------         ENDPROC       _DELAY_TIME_SET
+  -------         PROC          _DELAY_TIME_GET
+  D:0008H         SYMBOL        ID
+  -------         DO            
+  D:0009H         SYMBOL        ret
+  D:000AH         SYMBOL        i
+  D:000BH         SYMBOL        cnt
+  -------         ENDDO         
+  C:42D9H         LINE#         151
+  C:42DBH         LINE#         152
+  C:42DBH         LINE#         153
+  C:42DEH         LINE#         154
+  C:42E0H         LINE#         155
+  C:42E2H         LINE#         157
+  C:4302H         LINE#         158
+  C:4316H         LINE#         159
+  C:4316H         LINE#         160
+  C:4350H         LINE#         161
+  C:4350H         LINE#         162
+  C:436DH         LINE#         163
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/30/2023  13:29:31  PAGE 8
+
+
+  C:4370H         LINE#         164
+  C:4370H         LINE#         165
+  C:4370H         LINE#         166
+  C:4372H         LINE#         167
+  -------         ENDPROC       _DELAY_TIME_GET
+  -------         ENDMOD        DRV_TIMER
+
+  -------         MODULE        ?C?ULCMP
+  C:4434H         PUBLIC        ?C?ULCMP
+  -------         ENDMOD        ?C?ULCMP
+
+  -------         MODULE        ?C?LSTXDATA
+  C:4445H         PUBLIC        ?C?LSTXDATA
+  -------         ENDMOD        ?C?LSTXDATA
+
+  -------         MODULE        ?C?LSTKXDATA
+  C:4451H         PUBLIC        ?C?LSTKXDATA
+  -------         ENDMOD        ?C?LSTKXDATA
+
+Program Size: data=16.0 xdata=40 code=1338
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

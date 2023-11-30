@@ -1,0 +1,484 @@
+
+BL51 BANKED LINKER/LOCATER V6.22 - SN: K1FSC-A07X7Z
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\F50x_Target_App_InfoBlock.obj",
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\main.obj",
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\Startup_WatchdogDisable.obj",
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_mcu.obj",
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_mcu.obj"},
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_timer.obj"},
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_i2c.obj",
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_comm.obj"},
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj"},
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_pca.obj"},
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_spi.obj"},
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\L51_BANK.obj",
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_diag.obj"},
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_mem.obj"},
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_isp.obj"},
+BANK1{"D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_adc.obj"},
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\F50x_Target_Cam_InfoBlock.obj",
+"D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj",
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj"},
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CanBSW\nm_basic.obj"},
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CanBSW\sip_vers.obj"},
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CanBSW\tpmc.obj"},
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CanBSW\vstdlib.obj"},
+BANK2{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\appdesc.obj"},
+BANK2{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\appdescdev.obj"},
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\can_par.obj"},
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\desc.obj"},
+BANK2{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\drv_par.obj"},
+BANK1{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\il_par.obj"},
+BANK2{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\nmb_par.obj"},
+BANK2{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\tp_par.obj"},
+BANK2{"D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\v_par.obj"},
+"D:\micom_diag\CK\AVN\FIRMWARE\Application\F50x_Target_Optic_InfoBlock.obj"  TO "D:\micom_diag\CK\AVN\FIRMWARE\Application\SteeringCamera_App.omf" NOOL CODE(0x4000-0x7EFF) BANK0(?CO?F50x_Target_App_InfoBlock(0x7FF0)) OVERLAY( * ! (?PR?FLASH_RESETTRAP?DRV_MEM)) BANK1(?PR?FLASH_RESETTRAP?DRV_MEM(0xFE00), ?PR?_FLASH_BYTEWRITE?DRV_MEM,?PR?_FLASH_PAGEERASE?DRV_MEM, ?CO?F50X_TARGET_CAM_INFOBLOCK(0xFFF0))BANK2(?CO?F50X_TARGET_OPTIC_INFOBLOCK(0xFE00)) BANKAREA(8000H,0FFFFH) 
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _ILPUTTXRVM_VIEW
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_comm.obj (MGR_COMM)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _ILPUTTXRVM_SW_IND
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_comm.obj (MGR_COMM)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _ILPUTTXRVM_VIEW
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_comm.obj (MGR_COMM)
+    ADDRESS: FD66H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _ILPUTTXRVM_SW_IND
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\mgr_comm.obj (MGR_COMM)
+    ADDRESS: FD6AH
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILGETRXG_SEL_DISP
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILGETRXCF_GWAY_IGNSW
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILGETRXHU_RVM_CAMERAOFF
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILGETRXCF_CK_FCZC_RVM_SW
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILGETRXWD4_ERR
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILGETRXENG_VOL
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILGETRXG_SEL_DISP
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+    ADDRESS: DAAAH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILGETRXCF_GWAY_IGNSW
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+    ADDRESS: D23AH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILGETRXHU_RVM_CAMERAOFF
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+    ADDRESS: E7BAH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILGETRXCF_CK_FCZC_RVM_SW
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+    ADDRESS: D2DFH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILGETRXWD4_ERR
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+    ADDRESS: CBE2H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILGETRXENG_VOL
+    MODULE:  D:\micom_diag\CK\AVN\FIRMWARE\Application\drv_can.obj (DRV_CAN)
+    ADDRESS: B6DDH
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 71E1H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 545CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5483H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 54B5H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5A90H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5AA3H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5C50H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5D05H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5D3EH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 490FH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 4925H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 4944H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 4CB3H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 6613H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5856H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 5896H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 589BH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 58A5H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 58AAH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 736EH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 7264H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 6DECH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 6F1AH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _?APPLCANFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\can_drv.obj (CAN_DRV)
+    ADDRESS: 7101H
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILCANHNDTOILHND
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXDEFAULTINITVALUE
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXTYPE
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXCYCLICCYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXSTARTCYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXUPDATECYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXEVENTCYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXCONFIRMATIONFCTPTR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ILRESETCANCONFIRMATIONFLAGS
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: D3E4H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: D3E9H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9CBEH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9CC3H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXDEFAULTINITVALUE
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9CF1H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXDEFAULTINITVALUE
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9CF6H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9D09H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9D0EH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXDEFAULTINITVALUE
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9D37H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXDEFAULTINITVALUE
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9D3CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9D70H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: 9D75H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXTYPE
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: D5B0H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXSTARTCYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: D5D8H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILRESETCANCONFIRMATIONFLAGS
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: D601H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA07H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXINDIRECTION
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA0CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA31H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA35H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA3FH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA44H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA59H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONOFFSET
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA5DH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA67H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  CANCONFIRMATIONMASK
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA6CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXUPDATECYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA7BH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXCONFIRMATIONFCTPTR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA97H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXCONFIRMATIONFCTPTR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: CA9CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXCYCLICCYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: ADD5H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILTXEVENTCYCLES
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: AE80H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILCANHNDTOILHND
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: EAFBH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILCANHNDTOILHND
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: EB00H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILCANHNDTOILHND
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: EB0FH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ILCANHNDTOILHND
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\il.obj (IL)
+    ADDRESS: EB14H
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _APPLNMBASICFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\nm_basic.obj (NM_BASIC)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _APPLNMBASICFATALERROR
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CanBSW\nm_basic.obj (NM_BASIC)
+    ADDRESS: C75BH
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _DIAG_WARNING_ONOFF
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\appdesc.obj (APPDESC)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DIAG_WARNING_ONOFF
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\appdesc.obj (APPDESC)
+    ADDRESS: 92A6H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DIAG_WARNING_ONOFF
+    MODULE:  D:\micom_diag\mcnex_diagnostic_bit\CANGEN_MCNEX\appdesc.obj (APPDESC)
+    ADDRESS: 92C1H
+
+Program Size: data=80.4 xdata=2898 code=51224
+LINK/LOCATE RUN COMPLETE.  94 WARNING(S),  0 ERROR(S)

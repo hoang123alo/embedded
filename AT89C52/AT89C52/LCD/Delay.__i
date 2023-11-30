@@ -1,0 +1,1 @@
+"..\Lib\Delay.c" BROWSE INCDIR(..\Lib;..\LCD) DEBUG OBJECTEXTEND PRINT(.\Delay.lst) OBJECT(.\Delay.obj)

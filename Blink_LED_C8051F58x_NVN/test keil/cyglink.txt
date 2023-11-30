@@ -1,0 +1,7 @@
+"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\STARTUP.obj",
+"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\main.obj",
+"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\F50x_Target_App_InfoBlock.obj",
+"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\L51_BANK.obj",
+"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\mgr_mcu.obj",
+"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\drv_mcu.obj",
+"D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\drv_timer.obj"  TO "D:\Embedded\Blink_LED_C8051F58x_NVN\test keil\blinked" NOOL CODE(0x4000-0x7FFF) BANK0(?CO?F50x_Target_App_InfoBlock(0x7FF0))  BANKAREA(8000H,0FFFFH) 

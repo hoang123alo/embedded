@@ -1,0 +1,5 @@
+TRANSFER
+"STARTUP.obj",
+"main.obj",
+".\Delay.obj" 
+TO "timer.LIB"
